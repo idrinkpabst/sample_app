@@ -56,6 +56,8 @@ describe "Static pages" do
     click_link "Home"
     click_link "Sign up now!"
     page.should have_selector 'title', text: full_title('Sign up')
+    click_link "Sign in"
+    page.should have_selector 'title', text: full_title('Sign in')
     
   end
 end
